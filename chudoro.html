@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="Chudoro/img/favicon-dog.png" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Dog Hotel, music to calm your doggys">
+        <meta name="keywords" content="Dog, Hotel, Dog Music, HTML, CSS, JavaScript">
+        <meta name="author" content="Lewis Lim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="Chudoro/css/main.css">
+        
+        <title>Chudoro &mdash; Chudoro: Dog Holiday App</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="Chudoro/img/logo.png" alt="chudoro logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Hotels">
+                    <button class="search__button">
+                        <!-- deprecated code -->
+                        <!-- <svg class="search__icon">
+                            <use xlink:href="Chudoro/img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg> -->
+                        <img class="search__icon" src="Chudoro/img/SVG/magnifying-glass.svg">
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon__box">
+                        <img class="user-nav__icon" src="Chudoro/img/SVG/bookmark.svg">
+                        <span class="user-nav__notification"></span>
+                    </div>
+                    <div>
+                        <img class="user-nav__icon" src="Chudoro/img/SVG/chat.svg">
+                        <span class="user-nav__notification"></span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="Chudoro/img/user.jpg" alt="user photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Lewis</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="chudoro" class="side-nav__link">
+                                <img class="side-nav__icon" src="Chudoro/img/SVG/home.svg">
+                                <span>Dog Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="Chudoro/music" class="side-nav__link">
+                                <img class="side-nav__icon" src="Chudoro/img/SVG/music.svg">
+                                <span>Dog Music</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="Chudoro/directions" class="side-nav__link">
+                                <img class="side-nav__icon" src="Chudoro/img/SVG/address.svg">
+                                <span>Directions</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sidebar-bottom">
+                        <article class="disclaimer">
+                            &copy; Copyright © by Lewis Lim. This project was built through learning from the tutorial by Jonas Schmedtmann in Udemy. The website has been redesigned and image licenses were purchased from Freepik.com
+                            You may reference this website but please do not claim it as your own design. Please give credit to both Lewis Lim and Jonas Schmedtmann. Music downloaded from www.bensound.com.
+                        </article>
+                        <div class="legal">
+                            &copy; 2021 by Lewis Lim. All Rights Reserved.
+                        </div>
+                    </div>
+                </nav>
+                <main class="hotel-view">
+                    <section class="gallery">
+                        <figure class="gallery__item">
+                            <img src="Chudoro/img/hotel-1.jpg" alt="Photo of Hotel 1" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="Chudoro/img/hotel-2.jpg" alt="Photo of Hotel 2" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="Chudoro/img/hotel-3.jpg" alt="Photo of Hotel 3" class="gallery__photo">
+                        </figure>
+                    </section>
+                    <section class="overview">
+                        <h1 class="overview__heading">
+                            Resort Woof Ruff World
+                        </h1>
+                        <div class="overview__stars">
+                            <img class="overview__icon-star" src="Chudoro/img/SVG/star.svg">
+                            <img class="overview__icon-star" src="Chudoro/img/SVG/star.svg">
+                            <img class="overview__icon-star" src="Chudoro/img/SVG/star.svg">
+                            <img class="overview__icon-star" src="Chudoro/img/SVG/star.svg">
+                            <img class="overview__icon-star" src="Chudoro/img/SVG/star.svg">
+                        </div>
+                        <div class="overview__location">
+                            <img class="overview__icon-location" src="Chudoro/img/SVG/location-pin.svg">
+                            <button class="btn-inline">Totolotto Island, America</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">9.1</div>
+                            <div class="overview__rating-count">1359 votes</div>
+                        </div>
+                    </section>
+                    <section class="detail">
+                        <div class="description">
+                            <article class="paragraph">
+                                Located inside Toto World, this property is just next to Yoyo Train Station. 
+                                The accommodations provides a dog spa room, dog cafe, dog playground, a 24-hour front desk and free treats scattered throughout the property.
+                                Chihuahua in particular like the location – they rated it 9.3 for a three-person trip.
+                                We speak your language! Woof!
+                            </article>
+                            <article class="paragraph">
+                                Starting April 21, 2021, the new cancellation policy will apply, regardless of the coronavirus. 
+                                We strongly recommend booking an option with free cancellation just in case your travel plans changes.
+                            </article>
+                            <ul class="list">
+                                <li class="list__item">
+                                    Free WiFi
+                                </li>
+                                <li class="list__item">
+                                    Family rooms
+                                </li>
+                                <li class="list__item">
+                                    Non-smoking rooms
+                                </li>
+                                <li class="list__item">
+                                    Free Parking
+                                </li>
+                                <li class="list__item">
+                                    Award winning restaurant
+                                </li>
+                                <li class="list__item">
+                                    Free airport shuttle
+                                </li>
+                                <li class="list__item">
+                                    24-hour front desk
+                                </li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Snowy and 2 other friends recommend this hotel.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="Chudoro/img/user_1.jpg" alt="Friend 1" class="recommend__photo">
+                                    <img src="Chudoro/img/user_2.jpg" alt="Friend 2" class="recommend__photo">
+                                    <img src="Chudoro/img/user_3.jpg" alt="Friend 3" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+                        <section class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Woof! The dog food here tastes really good. Staffs pets me alot! Masseur so pretty!!
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="Chudoro/img/user_2.jpg" alt="User 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Brownie Choo</p>
+                                        <p class="review__user-date">Jun 13 2021</p>
+                                    </div>
+                                    <div class="review__rating">
+                                        9.6
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Front desk smells good. I pee on the counter, staff helps me clean! I even get a dry chicken treat. Why you so nice? Arooo!
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="Chudoro/img/user_3.jpg" alt="User 3" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Chuchu Woo</p>
+                                        <p class="review__user-date">Aug 27 2021</p>
+                                    </div>
+                                    <div class="review__rating">
+                                        9.9
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <button class="btn-inline">Show All <span>&rarr;</span></button>
+                        </section>
+                    </section>
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good news! We have 6 free rooms for your selected dates!
+                        </h2>
+                        <button class="btn">
+                            Book now
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

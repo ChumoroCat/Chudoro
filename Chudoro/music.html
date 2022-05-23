@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon-dog.png" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Dog Hotel, music to calm your doggys">
+        <meta name="keywords" content="Dog, Hotel, Dog Music, HTML, CSS, JavaScript">
+        <meta name="author" content="Lewis Lim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <title>Chudoro &mdash; Chudoro: Dog Holiday App</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="chudoro logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Hotels">
+                    <button class="search__button">
+                        <img class="search__icon" src="img/SVG/magnifying-glass.svg">
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon__box">
+                        <img class="user-nav__icon" src="img/SVG/bookmark.svg">
+                        <span class="user-nav__notification"></span>
+                    </div>
+                    <div>
+                        <img class="user-nav__icon" src="img/SVG/chat.svg">
+                        <span class="user-nav__notification"></span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="user photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Lewis</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="../chudoro" class="side-nav__link">
+                                <img class="side-nav__icon" src="img/SVG/home.svg">
+                                <span>Dog Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="music" class="side-nav__link">
+                                <img class="side-nav__icon" src="img/SVG/music.svg">
+                                <span>Dog Music</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="directions" class="side-nav__link">
+                                <img class="side-nav__icon" src="img/SVG/address.svg">
+                                <span>Directions</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sidebar-bottom">
+                        <article class="disclaimer">
+                            &copy; Copyright © by Lewis Lim. This project was built through learning from the tutorial by Jonas Schmedtmann in Udemy. The website has been redesigned and image licenses were purchased from Freepik.com
+                            You may reference this website but please do not claim it as your own design. Please give credit to both Lewis Lim and Jonas Schmedtmann. Music downloaded from www.bensound.com.
+                        </article>
+                        <div class="legal">
+                            &copy; 2021 by Lewis Lim. All Rights Reserved.
+                        </div>
+                    </div>
+                </nav>
+                <main class="hotel-view">
+                    <section class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/music.jpg" alt="Music" class="gallery__photo">
+                        </figure>
+                    </section>
+                    <section class="overview">
+                        <h1 class="overview__heading">
+                            Resort Woof Ruff World
+                        </h1>
+                        <div class="overview__stars">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                        </div>
+                        <div class="overview__location">
+                            <img class="overview__icon-location" src="img/SVG/location-pin.svg">
+                            <button class="btn-inline">Totolotto Island, America</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">9.1</div>
+                            <div class="overview__rating-count">1359 votes</div>
+                        </div>
+                    </section>
+                    <section class="music">
+                        <audio class="myAudio">
+                            <source src="song/1.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <audio class="myAudio">
+                            <source src="song/2.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <audio class="myAudio">
+                            <source src="song/3.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <audio class="myAudio">
+                            <source src="song/4.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <audio class="myAudio">
+                            <source src="song/5.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <audio class="myAudio">
+                            <source src="song/6.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <audio class="myAudio">
+                            <source src="song/7.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <audio class="myAudio">
+                            <source src="song/8.mp3"> Your browser does not support the audio element.
+                        </audio>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>Doggy Blues</h3>
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>Jass Woof</h3>
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>Dancing Food</h3>
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>Electric Chihuahua</h3>
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>Poppy Dog Moments</h3>
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>Sad No Food</h3>
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>Drummy Dogs</h3>                                
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+                        <div><button class="playpausebtn" type="button"></button>
+                            <div class="music-inner-container">
+                                <div class="name-time">
+                                    <h3>City Dog</h3>
+                                    <div class="name-time-box"><span class="currenttimetext">00:00</span>/<span class="durationtext">00:00</span></div>
+                                </div>
+                                <input class="seekslider" type="range" min="0" max="100" value="0" step="0.1"></input>
+                            </div>
+                        </div>
+
+                    </section>
+                    <div class="cta">
+                        <button class="btn">
+                            Book now
+                        </button>
+                    </div>
+                </main>
+                <script>
+                    //Loads the audio when play or pause button is pressed
+                    "use strict";
+                    // $(document).ready(function(){                          
+                        var seeking = false, seekto, down;  
+                        let audio = document.querySelectorAll(".myAudio");
+                        let btns = document.querySelectorAll(".playpausebtn");
+                        let seeksliders = document.querySelectorAll(".seekslider");
+                        let currenttimeText = document.querySelectorAll(".currenttimetext");
+                        let durationText = document.querySelectorAll(".durationtext");
+                    
+                        for (let i=0; i<audio.length; i++) {
+                            btns[i].addEventListener('click', function () {
+                                if (audio[i].paused){
+                                    audio[i].play();
+                                    btns[i].style.background = "url(img/pause.jpg)no-repeat";
+                                }else{
+                                    audio[i].pause();
+                                    btns[i].style.background = "url(img/play.jpg)no-repeat";
+                                }
+                            });
+
+                            seeksliders[i].addEventListener('mouseup', function () {
+                                seeking = false;
+                                changeSeek();
+                            }); 
+
+                            seeksliders[i].addEventListener('mousedown', function () {
+                                seeking = true;
+
+                            });
+
+                            audio[i].addEventListener('timeupdate', function () {
+                                seekTimeUpdate();
+                            }); 
+                            
+                            function changeSeek() {
+                                //seekslider's value in %, becomes audio's actual position
+                                audio[i].currentTime = audio[i].duration * (seeksliders[i].value/100);
+
+                                //mousedown still zero, mouseup not slider's value updated
+                                console.log((seeksliders[i].value/100));
+                                
+                            }
+
+                            function seekTimeUpdate() {
+                                if(seeking == false) {
+                                    // get slider's relative position based on currentTime
+                                    var newTime = audio[i].currentTime / audio[i].duration * 100; 
+                                    seeksliders[i].value = newTime;
+
+                                    var currentmins = Math.floor(audio[i].currentTime / 60);
+                                    var currentsecs = Math.floor(audio[i].currentTime  - (currentmins * 60));
+                                    var durationmins = Math.floor(audio[i].duration / 60);
+                                    var durationsecs = Math.floor(audio[i].duration  - (durationmins * 60));
+
+                                    //show a 0 in front if less than 10secs remaining in timer
+                                    if (currentsecs < 10) {currentsecs = "0" + currentsecs;}
+                                    if (durationsecs < 10) {durationsecs = "0" + durationsecs;}
+                                    if (currentmins < 10) {currentmins = "0" + currentmins;}
+                                    if (durationmins < 10) {durationmins = "0" + durationmins;}
+
+                                    currenttimeText[i].innerHTML = currentmins + ":" + currentsecs;
+                                    durationText[i].innerHTML = durationmins + ":" + durationsecs;
+                                }
+                            }
+                        };
+                    // });    
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

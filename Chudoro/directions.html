@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon-dog.png" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Dog Hotel, music to calm your doggys">
+        <meta name="keywords" content="Dog, Hotel, Dog Music, HTML, CSS, JavaScript">
+        <meta name="author" content="Lewis Lim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdkxMX5zlBSr8XlZPT9AAUOLAxcyWgJXY&callback=initMap&v=weekly"
+        async
+        ></script>
+        
+        <title>Chudoro &mdash; Chudoro: Dog Holiday App</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="chudoro logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Hotels">
+                    <button class="search__button">
+                        <img class="search__icon" src="img/SVG/magnifying-glass.svg">
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon__box">
+                        <img class="user-nav__icon" src="img/SVG/bookmark.svg">
+                        <span class="user-nav__notification"></span>
+                    </div>
+                    <div>
+                        <img class="user-nav__icon" src="img/SVG/chat.svg">
+                        <span class="user-nav__notification"></span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="user photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Lewis</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="../chudoro" class="side-nav__link">
+                                <img class="side-nav__icon" src="img/SVG/home.svg">
+                                <span>Dog Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="music" class="side-nav__link">
+                                <img class="side-nav__icon" src="img/SVG/music.svg">
+                                <span>Dog Music</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="directions" class="side-nav__link">
+                                <img class="side-nav__icon" src="img/SVG/address.svg">
+                                <span>Directions</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="sidebar-bottom">
+                        <article class="disclaimer">
+                            &copy; Copyright © by Lewis Lim. This project was built through learning from the tutorial by Jonas Schmedtmann in Udemy. The website has been redesigned and image licenses were purchased from Freepik.com
+                            You may reference this website but please do not claim it as your own design. Please give credit to both Lewis Lim and Jonas Schmedtmann. Music downloaded from www.bensound.com.
+                        </article>
+                        <div class="legal">
+                            &copy; 2021 by Lewis Lim. All Rights Reserved.
+                        </div>
+                    </div>
+                </nav>
+                <main class="hotel-view">
+                    <section class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/hotel.jpg" alt="Photo of Road" class="gallery__photo">
+                        </figure>
+                    </section>
+                    <section class="overview">
+                        <h1 class="overview__heading">
+                            Resort Woof Ruff World
+                        </h1>
+                        <div class="overview__stars">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                            <img class="overview__icon-star" src="img/SVG/star.svg">
+                        </div>
+                        <div class="overview__location">
+                            <img class="overview__icon-location" src="img/SVG/location-pin.svg">
+                            <button class="btn-inline">Totolotto Island, America</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">9.1</div>
+                            <div class="overview__rating-count">1359 votes</div>
+                        </div>
+                    </section>
+                        <section class="directions">
+                            <h2 class="directions-header">LOCATION</h2>
+                            <article class="directions-description">Chudoro, our Dog Hotel is located at Pulau Salu, surrounded by the vast seas. You can access the island via cable car at Sentosa. You can ask us for a free cable car pass!</article> 
+                        </section>
+                        <section>
+                            <div id="map">
+                                Google Maps
+                            </div>
+                        </section>
+                    </section>
+                    <div class="cta">
+                        <button class="btn">
+                            Book now
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+    <script>
+        let map;
+
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 1.2166946, lng: 103.7066199 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 18,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+        }
+    </script>
+</html>
